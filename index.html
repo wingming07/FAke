@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="NAME_IT — elegant jewelry & accessories. Discover curated chains, bangles and hair clips with daily offers." />
+  <meta name="keywords" content="jewelry, chains, bangles, clips, offers, online shop, NAME_IT" />
+  <meta name="author" content="NAME_IT" />
+  <title>NAME_IT — Elegant Jewelry & Accessories</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <!-- Main stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- JSON-LD: Organization (SEO) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Store",
+    "name": "NAME_IT",
+    "url": "https://www.name-it.example",
+    "logo": "https://www.name-it.example/images/logo.png",
+    "description": "Elegant jewelry & accessories — chains, bangles and hair clips with daily offers."
+  }
+  </script>
+
+  <!-- Main script -->
+  <script defer src="js/script.js"></script>
+</head>
+<body>
+  <!-- HEADER / NAV -->
+  <header class="site-header" role="banner">
+    <div class="container header-inner">
+      <a class="brand" href="#home">
+        <img src="images/style.webp" alt="NAME_IT logo" class="logo" onerror="this.style.display='none'">
+        <span class="brand-text">NAME_IT</span>
+      </a>
+
+      <nav class="main-nav" role="navigation" aria-label="Main navigation">
+        <a href="#home">Home</a>
+        <a href="#offers">Offers</a>
+        <a href="#category">Category</a>
+        <a href="#testimonials">Testimonials</a>
+        <a href="#newsletter">Newsletter</a>
+      </nav>
+
+      <div class="nav-actions">
+        <div class="search">
+          <input type="search" aria-label="Search products" placeholder="Search">
+          <button aria-label="Search button">🔍</button>
+        </div>
+        <button class="icon-btn" aria-label="Cart">🛒</button>
+        <a class="auth" href="#">Login</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="home">
+    <!-- HERO / HOME -->
+    <section class="hero" id="hero" aria-label="Hero">
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <h1>Elegant Jewelry for Every Moment</h1>
+          <p class="lead">Curated chains, bangles & accessories — exclusive offers everyday.</p>
+          <a class="btn primary" href="#category">Shop Collection</a>
+        </div>
+        <figure class="hero-media" aria-hidden="true">
+          <img src="images/OIP.web" alt="Jewelry hero" loading="lazy">
+        </figure>
+      </div>
+    </section>
+
+    <!-- OFFERS -->
+    <section id="offers" class="offers" aria-labelledby="offers-heading">
+      <div class="container">
+        <h2 id="offers-heading">TODAY’S 27% OFFER'S — Ending soon</h2>
+        <div id="countdown" class="countdown" aria-live="polite">00:00:00</div>
+
+        <div class="offer-row">
+          <img src="images/chains.jpg" alt="Chains - offer image" class="offer-img" loading="lazy">
+          <div class="offer-plus" aria-hidden="true">+</div>
+          <img src="images/bangles.jpg" alt="Bangles - offer image" class="offer-img" loading="lazy">
+
+          <aside class="offer-card" aria-label="Offer card">
+            <p class="original"><del>Rs : 699/-</del></p>
+            <p class="price">Offer Price : <strong>₹499/-</strong></p>
+            <button class="btn outline add-cart">Add To Cart</button>
+          </aside>
+        </div>
+
+        <p class="cta-book">BOOK YOUR ORDER NOW</p>
+      </div>
+    </section>
+
+    <!-- CATEGORY -->
+    <section id="category" class="categories" aria-labelledby="category-heading">
+      <div class="container">
+        <h2 id="category-heading">Category's</h2>
+        <div class="grid categories-grid">
+          <article class="card category-card">
+            <img src="images/chains.jpg" alt="Chains category" loading="lazy">
+            <h3>Chains</h3>
+            <button class="btn ghost">View All</button>
+          </article>
+
+          <article class="card category-card">
+            <img src="images/hair clip.jpg" alt="Clips category" loading="lazy">
+            <h3>Clips</h3>
+            <button class="btn ghost">View All</button>
+          </article>
+
+          <article class="card category-card">
+            <img src="images/Bangles.webp" alt="Bangles category" loading="lazy">
+            <h3>Bangles</h3>
+            <button class="btn ghost">View All</button>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section id="testimonials" class="testimonials" aria-labelledby="testi-heading">
+      <div class="container">
+        <h2 id="testi-heading">What our customers say</h2>
+
+        <div class="testi-wrap">
+          <button class="testi-nav prev" aria-label="Previous testimonial">‹</button>
+
+          <div class="testi-slider" id="testi-slider" aria-live="polite">
+            <blockquote class="testi-item">
+              <p>“Stunning quality and fast delivery. I love my new necklace!”</p>
+              <footer>- S. Priya — ★★★★★</footer>
+            </blockquote>
+
+            <blockquote class="testi-item">
+              <p>“Great value for money. The bangles look even better in person.”</p>
+              <footer>- Arun K — ★★★★☆</footer>
+            </blockquote>
+
+            <blockquote class="testi-item">
+              <p>“Very helpful customer support and the offers are amazing.”</p>
+              <footer>- Meena R — ★★★★★</footer>
+            </blockquote>
+          </div>
+
+          <button class="testi-nav next" aria-label="Next testimonial">›</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- NEWSLETTER -->
+    <section id="newsletter" class="newsletter" aria-labelledby="news-heading">
+      <div class="container">
+        <h2 id="news-heading">Subscribe & Get Deals</h2>
+        <p>Sign up to receive exclusive offers and early access to new collections.</p>
+
+        <form id="newsletter-form" class="newsletter-form" novalidate>
+          <input id="newsletter-email" type="email" placeholder="Enter your email" aria-label="Email address" required>
+          <button class="btn primary" type="submit">Subscribe</button>
+        </form>
+        <p id="newsletter-msg" class="small muted" role="status" aria-live="polite"></p>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+  <div class="footer-grid">
+    <div class="footer-col">
+      <h4>Quick Links</h4>
+      <a href="#">Home</a>
+      <a href="#">Shop</a>
+      <a href="#">Offers</a>
+      <a href="#">Categories</a>
+      <a href="#">Contact</a>
+    </div>
+
+    <div class="footer-col">
+      <h4>Contact</h4>
+      <p>Email: support@name_it.com</p>
+      <p>Phone: +91 9876543210</p>
+    </div>
+
+    <div class="footer-col">
+      <h4>Follow Us</h4>
+      <a href="#">Facebook</a>
+      <a href="#">Instagram</a>
+      <a href="#">Twitter</a>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    © 2025 NAME_IT. All Rights Reserved.
+  </div>
+</footer>
+
+</body>
+</html>
